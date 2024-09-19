@@ -1,0 +1,234 @@
+
+
+/* Estilos para el contenedor principal de la página de mapas */
+.paginaMaps {
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navegacionMaps {
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Ancho completo */
+    background: white; /* Fondo blanco */
+    border: 0px; /* Sin borde */
+    margin-top: 10px;
+  }
+  
+  /* Estilos para el logo */
+  .logo {
+    position: relative; /* Posición relativa */
+    left: 0px; /* Posición inicial a la izquierda */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el mapa */
+  .maps {
+    text-align: center; /* Centra horizontalmente */
+  }
+  
+  .map {
+    width: 100%;
+    height: 500px;
+  }
+  
+  
+  section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 80px 0 0;
+    }
+    
+    /*MiniSección de Nosotros*/
+    .nosotros {
+      background-color: orange;
+      margin-top: -50px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .nosotros h1 {
+      text-align: center;
+      font-size: 40px;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-top: 20px;
+    }
+    .nosotros h1::after {
+      content: "";
+      height: 3px;
+      width: 380px;
+      background-color: black;
+      border-radius: 10px;
+      display: block;
+      margin: auto;
+    }
+    .wrapper {
+      padding: 0px 60px;
+      margin: 60px auto;
+    }
+    .contenido {
+      width: 60%;
+      float: left;
+      text-align: left;
+      padding: 0px 30px;
+    }
+    .contenido h3 {
+      color: black;
+      letter-spacing: 1px;
+      margin-top: 20px;
+    }
+    .contenido p {
+      text-align: justify;
+      font-size: 15px;
+      color: black;
+      margin-top: 20px;
+    }
+   
+    .image-section {
+      float: right;
+      padding: 0px 30px;
+    }
+    .image-section img {
+      max-width: 100%;
+      
+    }
+    @media screen and (max-width: 900px) {
+      .nosotros {
+        margin-top: 10px;
+        width: 100%;
+        padding-top: 20px;
+      }
+      .nosotros h1 {
+        font-size: 32px;
+      }
+      .contenido {
+        letter-spacing: -1px;
+        width: 100%;
+        float: none;
+      }
+     
+      .image-section {
+        float: none;
+        width: 100%;
+      }
+    }
+  
+  
+  /*NOVEDADES*/
+  .mision {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px; /* Espacio entre las tarjetas */
+      margin-bottom: 100px;
+      margin-left: auto; /* Ajusta automáticamente el margen izquierdo */
+      margin-right: auto; /* Ajusta automáticamente el margen derecho */
+      max-width: 1350px; /* Opcional: establece un ancho máximo */
+    }
+    
+    .mision-titleDos {
+      width: 100%;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .card-pro {
+      margin-left: 40px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 600px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 32px;
+      overflow: hidden;
+      border-radius: 10px;
+      background: white;
+      border: 2px solid gray;
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .card-pro .content .heading {
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 24px; /* Cambia el tamaño del título */
+      color: black; /* Cambia el color del título */
+      font-weight: bold; /* Aplica negrita al título */
+    }
+    
+    .card-pro .content .para {
+      font-size: 16px; /* Cambia el tamaño de la descripción */
+      color: #666; /* Cambia el color de la descripción */
+      line-height: 1.5; /* Ajusta el interlineado de la descripción */
+    }
+    .card-pro:hover {
+      box-shadow: 0 0 20px rgb(253, 163, 33); /* Cambia el color de la sombra para que sea similar al del borde */
+      border-color: rgb(253, 163, 33);
+    }
+  
+  
+    @media screen and (max-width: 768px) {
+      .card-pro {
+        margin: 0 20px; /* Centra la tarjeta horizontalmente cuando la pantalla sea menor o igual a 768px */
+      }
+    }
+  
+  
+    
+  
+  /*--------------------------------------------------------------------------------------------*/
+  
+  footer {
+    background-color: lightgrey;
+    color: gray;
+    padding: 20px 0;
+   }
+  
+   footer h3 {
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 30px;
+   }
+  
+   footer ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     margin-bottom: 10px;
+   }
+  
+   footer ul li {
+     margin-bottom: 8px;
+   }
+  
+   footer ul li p {
+     display: flex;
+     text-align: justify;
+   }
+  
+   footer ul li a {
+     color: grey;
+     text-decoration: none;
+     transition: color 0.3s;
+   }
+  
+   footer .columU {
+     display: flex;
+     flex-direction: column; /* Establece la dirección de los elementos hijos */
+     align-items: center;
+     justify-content: center;
+   }
+  
+   footer ul li a:hover {
+     color: rgb(253, 163, 33);
+   }
+  
+   footer .columU .redes {
+   font-size: 2.5rem; /* Tamaño de fuente más grande para los iconos */
+   margin-right: 20px;
+   }

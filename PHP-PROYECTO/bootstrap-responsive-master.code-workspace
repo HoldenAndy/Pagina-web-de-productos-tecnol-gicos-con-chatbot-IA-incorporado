@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/PROYECTO TALLER WEB (1)/PROYECTO TALLER WEB/imagenes"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "bootstrap-responsive-master"
+	}
+}

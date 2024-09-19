@@ -1,0 +1,600 @@
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+   .imgAnuncioUno {
+    width: 100%;   
+   }
+
+   .container-apps {
+    display: flex;    
+    gap: -1rem;
+    cursor: pointer;      
+   }
+   
+   .container-logo {     
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    cursor: pointer;
+   }
+
+   .container-servicios {
+    display: flex;    
+    gap: 1rem;
+    cursor: pointer;     
+   }
+
+   .submenu {
+    position: relative;    
+   }
+   .submenu #carrito{
+    display: none;     
+   }
+   .submenu:hover #carrito{
+    display: block;     
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: rgb(253, 163, 33);
+    padding: 20px;
+    min-width: 400px;
+   }
+   .tabla-carrito {
+    width: 100%;  
+   }
+   .tabla-carrito tr, td{
+    color: white;    
+   }
+
+
+   #lista-carrito th,
+   #lista-carrito td {
+  padding-right: 10px;
+}
+   
+   .busqueda{
+    display: flex;
+    width: 650px; 
+    height:50px; /* Largo de la barra de búsqueda */
+    padding: 10px; /* Relleno interno */
+    border: 1px solid white; /* Borde */
+    box-sizing: border-box; 
+    align-items: center;
+   }
+
+   .busqueda input[type="search"] {
+    height: 45px; /* Ajusta la altura de la barra de búsqueda */
+    width: 450px; /* Ajusta el ancho de la barra de búsqueda */
+    font-size: 18px; /* Ajusta el tamaño de la fuente dentro de la barra de búsqueda */
+   }
+
+   .busqueda .btn{
+    border: 0px;
+    height: 45px;
+   }
+
+
+/* ---- */
+  /* Estilos para alinear imagen con texto */
+  .ubi .imgubi {
+    vertical-align: middle;
+  }
+
+  /* Estilos para contenedor con margen derecho */
+  .ubi {
+    margin-right: 85px;
+  }
+
+  .ubi .btn{
+    width: 200px;
+    border: 1px solid rgb(239, 140, 2);
+    background: rgb(253, 163, 33);
+  }
+
+  /* Estilos para texto con color negro */
+  .texubi {
+    color: black;
+  }
+/* ---- */
+
+
+  .row h1 {
+    font-size: 2.5rem; /* Justifica el texto */
+  }
+
+  .text-justify {
+    font-size: 13px; /* Justifica el texto */
+  }
+
+  .collapse .navbar-nav .dropdown-menu a:hover {
+  background-color: rgb(253, 163, 33); /* para que tome color al seleccionar la opcion */
+  }
+
+
+/*----------------------------------------------------------------------------------*/
+.conte{
+  max-width: 1200px; /* Ancho máximo */
+    padding: 10px; /* Relleno */
+    margin: auto; /* Margen automático para centrar */
+    display: flex; /* Utiliza flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    contain: paint; /* Oculta lo que queda afuera del contenedor */
+}
+.conte .conteproductos {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 30px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: .3s;
+}
+.conte .conteproductos .productos {
+  max-width: 300px; /* Ancho máximo */
+    padding: 10px; /* Relleno */
+    border: 1px solid rgb(253, 163, 33); /* Borde */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 20px; /* Relleno */
+    transition: .3s; /* Transición suave */
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Establece la dirección de los elementos hijos */
+    align-items: center; /* Centra horizontalmente los elementos */
+}
+.conteproductos .productos:hover{ 
+  box-shadow: 0 0 10px rgb(253, 163, 33);/*al seleccionar de una sombra maranja*/
+  scale: 1.05;
+}
+
+.conteproductos .productos .proimagen{
+  width: 170px;
+  height: 200px;
+  margin: auto;
+}
+.conteproductos .productos .titulopro{
+  display: block;
+  font-weight: bold; /*tipo de letra*/
+  text-align: center; /*que la letra se ubique al centro*/
+  text-transform: uppercase;
+}
+.conteproductos .productos .modelopro{
+  display: block;
+}
+.conteproductos .productos .preciopro{
+  display: block;
+  text-align: center; /*el texto aparezca en el centro*/
+  font-weight: bold; /*tipo de letra*/
+  font-size: 22px;
+}
+.conteproductos .productos .carritopro{
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background: rgb(253, 163, 33);
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*--------------------------------------------------------------------------------------------*/
+
+  footer {
+   background-color: lightgrey;
+   color: gray;
+   padding: 20px 0;
+  }
+
+  footer h3 {
+   color: grey;
+   font-size: 20px;
+   margin-bottom: 30px;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  footer ul li {
+    margin-bottom: 8px;
+  }
+
+  footer ul li p {
+    display: flex;
+    text-align: justify;
+  }
+
+  footer ul li a {
+    color: grey;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  footer .columU {
+    display: flex;
+    flex-direction: column; /* Establece la dirección de los elementos hijos */
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer ul li a:hover {
+    color: rgb(253, 163, 33);
+  }
+
+  footer .columU .redes {
+  font-size: 2.5rem; /* Tamaño de fuente más grande para los iconos */
+  margin-right: 20px;
+  }
+/* ------------------------------------------------------------------------------------------------------------------- */
+  
+
+@media (max-width: 1300px) {
+    /* Elimina la altura mínima en pantallas más pequeñas */
+  .card-fixed-height {
+     min-height: auto;
+  }
+  .busqueda{
+     display: flex;
+     width: 500px; 
+     height:50px; /* Largo de la barra de búsqueda */
+     padding: 10px; /* Relleno interno */
+     border: 1px solid white; /* Borde */
+     box-sizing: border-box; 
+     align-items: center;
+  }
+  .busqueda input[type="search"] {
+     height: 45px; /* Ajusta la altura de la barra de búsqueda */
+     width: 350px; /* Ajusta el ancho de la barra de búsqueda */
+     font-size: 18px; /* Ajusta el tamaño de la fuente dentro de la barra de búsqueda */
+  }
+  
+}
+
+@media (max-width: 1200px) {
+    /* Elimina la altura mínima en pantallas más pequeñas */
+  .card-fixed-height {
+      min-height: auto;
+ }
+  .busqueda{
+     display: flex;
+     width: 400px; 
+     height:50px; /* Largo de la barra de búsqueda */
+     padding: 10px; /* Relleno interno */
+     border: 1px solid white; /* Borde */
+     box-sizing: border-box; 
+     align-items: center;
+  }
+  .busqueda input[type="search"] {
+     height: 45px; /* Ajusta la altura de la barra de búsqueda */
+     width: 250px; /* Ajusta el ancho de la barra de búsqueda */
+     font-size: 18px; /* Ajusta el tamaño de la fuente dentro de la barra de búsqueda */
+  }
+  
+}
+
+@media (max-width: 990px) {
+    /* Elimina la altura mínima en pantallas más pequeñas */
+    .card-fixed-height {
+       min-height: auto;
+    }
+    .container-servicios {
+       display: flex;    
+       gap: 4rem;
+       cursor: pointer;  
+       justify-content: center;   
+       align-items: center;
+    }
+    .busqueda{
+       display: flex;
+       width: 100%; 
+       height:50px; /* Largo de la barra de búsqueda */
+       padding: 10px; /* Relleno interno */
+       border: 1px solid white; /* Borde */
+       box-sizing: border-box; 
+       align-items: center;
+       justify-content: center;
+    }
+    .busqueda input[type="search"] {
+       height: 45px; /* Ajusta la altura de la barra de búsqueda */
+       width: 80%; /* Ajusta el ancho de la barra de búsqueda */
+       font-size: 18px; /* Ajusta el tamaño de la fuente dentro de la barra de búsqueda */
+    }
+
+    .dropdown a {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .row h1 {
+    font-size: 2rem; /* Justifica el texto */
+    }
+
+    .text-justify {
+    font-size: 9px; /* Justifica el texto */
+    }
+    
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom:50px;
+    }
+   
+    .conteproductos {
+      width: 100% !important;
+   }  
+   .carritoMas{
+    width: 100% !important;
+   }  
+
+   
+  
+}
+
+@media (max-width: 576px) {
+    /* Reduce el tamaño del texto dentro de las tarjetas en pantallas muy pequeñas */
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustar márgenes en dispositivos medianos */
+@media (max-width: 768px) {
+    /* Ajustar el tamaño máximo de cada producto */
+    
+}
+
+/* Ajustar aún más los márgenes en dispositivos pequeños */
+@media (max-width: 576px) {
+    /* Ajustar el tamaño máximo de cada producto */
+    .container-servicios {
+        display: flex;    
+        gap: 4rem;
+        cursor: pointer;  
+        justify-content: center;   
+        align-items: center;
+    }
+
+    .submenu:hover #carrito{
+      display: block;     
+      position: absolute;
+      right: 0;
+      backdrop-filter: blur(10px);
+      top: 100%;
+      z-index: 1;
+      background-color: rgb(253, 163, 33);
+      padding: 20px;
+      min-width: 350px;
+     }
+  
+   
+}
+@media (max-width: 536px) {
+  .conte .conteproductos {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px;
+    width: 100%;
+    transition: .3s;
+  }
+  .conte .conteproductos .productos {
+    max-width: 190px; /* Ancho máximo */
+      padding: 10px; /* Relleno */
+      border: 1px solid rgb(253, 163, 33); /* Borde */
+      border-radius: 10px; /* Borde redondeado */
+      padding: 20px; /* Relleno */
+      transition: .3s; /* Transición suave */
+      display: flex; /* Utiliza flexbox */
+      flex-direction: column; /* Establece la dirección de los elementos hijos */
+      align-items: center; /* Centra horizontalmente los elementos */
+  }
+  
+  .conteproductos .productos .proimagen{
+    width: 150px;
+    height: 190px;
+    margin: auto;
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* ---- */
+  /* Estilos para contenedor de imágenes locales */
+  .fotoLocal {
+    display: flex; /* Utiliza flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 40%; /* Ancho del contenedor */
+    height: 250px; /* Altura fija del contenedor */
+  }
+
+  /* Estilos para enlaces de navegación */
+  .nav-link {
+    font-weight: 600; /* Peso de la fuente */
+  }
+
+  /* Estilos para justificar texto */
+  .text-justify {
+    text-align: justify; /* Justifica el texto */
+  }
+
+  /* Estilos para tarjetas al pasar el cursor */
+  .card:hover {
+    opacity: 0.7; /* Reduce la opacidad al pasar el cursor */
+  }
+
+  /* Estilos para texto dentro de tarjetas */
+  .card-text {
+    text-align: justify; /* Justifica el texto dentro de las tarjetas */
+  }
+
+  /* Estilos para un textarea específico */
+  #txtComment {
+    resize: none; /* Evita que el textarea sea redimensionable */
+  }
+
+  /* Estilos para tarjetas con altura fija */
+  .card-fixed-height {
+    height: 100%; /* Altura fija */
+  }
+/* ---- */
+/* ------------------------------------------------------------------------------------------------------------------- */
+.btn-remove {
+  background-color: rgb(253, 163, 33); /* Cambia el color del fondo del botón a azul */
+  border-color: rgb(253, 163, 33); /* Cambia el color del borde del botón a azul */
+  color: black !important; /* Cambia el color del texto del botón a blanco */
+}
+/* --CARRITO-- */
+
+.carritoMas {
+  border: 1px solid #666;
+  width: 25%;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: auto;
+  position: sticky !important;
+  top: 0;
+  transition: .3s;
+  opacity: 0;
+  margin-right: -100%;
+}
+
+.carritoMas .header-carrito{
+   background-color: #000;
+   color: white;
+   text-align: center;
+   padding: 30px 0;
+}
+.carritoMas .carrito-item{
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #666;
+  padding: 20px;
+}
+
+.carritoMas .carrito-item img{
+  margin-right: 20px;
+}
+.carritoMas .carrito-item .carrito-item-titulo{
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.carritoMas .carrito-item .selector-cantidad{
+  display: inline-block;
+  margin-right: 25px;
+
+}
+
+.carritoMas .carrito-item .carrito-item-cantidad{
+  border: none;
+  font-size: 15px;
+  background: transparent;
+  display: inline-block;
+  width: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.carritoMas .carrito-item .selector-cantidad i{
+  font-size: 12px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.carritoMas .carrito-item .carrito-item-precio{
+   font-weight: bold;
+   display: inline-block;
+   font-size: 15px;
+   margin-bottom: 5px;
+}
+.carritoMas .carrito-item .btn-eliminar{
+  position: absolute;
+  right: 5px;
+  top: 80px;
+  color: black;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  z-index: 20px;
+}
+
+.carritoMas .carrito-item .btn-eliminar i{
+  pointer-events: none;
+  
+}
+.carrito-total{
+  background-color: rgb(235, 235, 235);
+  padding: 30px;
+}
+
+.carrito-total .fila{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.carrito-total .btn-pagar{
+  display: block;
+  width: 100%;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .3s;
+}
+
+.carrito-total .btn-pagar:hover{
+  scale: 1.05;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
